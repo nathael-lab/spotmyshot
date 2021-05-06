@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<%= image_tag("spotmyshot.svg", class: 'logo', id: 'identifier', alt: 'logo_shot') %>
+
+
+
+<div class="Posts">
+    <% @spotmyshots.each do |spotmyshot| %>
+      <div class="Post1">
+        <div class="image">
+        <%= image_tag spotmyshot.image %> </div>
+        <div class="titre"> <%= link_to spotmyshot.titre, spotmyshot%></div>
+      </div>
+    <% end %>
+</div>
+
+<br>
+
+<%= link_to 'Create a new spot', new_spotmyshot_path %>

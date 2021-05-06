@@ -1,0 +1,39 @@
+// Place all the styles related to the spotmyshots controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.Posts {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+  }
+  
+  .Post1 {
+    flex-direction: column;
+    margin: 3vw;
+  }
+  .image img{
+    object-fit: cover;
+    height: 60vh;
+    width: 40vh;
+    border-radius: 30px;
+  }
+.titre{
+    width: 100%;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+.logo {
+    position: absolute;
+    width: 512px;
+    height: 512px;
+    left: -150px;
+    top: -200px;
+}

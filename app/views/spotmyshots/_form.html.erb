@@ -1,0 +1,47 @@
+<%= form_with(model: spotmyshot) do |form| %>
+  <% if spotmyshot.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(spotmyshot.errors.count, "error") %> prohibited this spotmyshot from being saved:</h2>
+
+      <ul>
+        <% spotmyshot.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :titre %>
+    <%= form.text_field :titre %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.text_field :image %>
+  </div>
+
+  <div class="field">
+    <%= form.label :paramètres %>
+    <%= form.text_field :parametres %>
+  </div>
+
+  <div class="field">
+    <%= form.label :heure %>
+    <%= form.text_field :heure %>
+  </div>
+
+  <div class="field">
+    <%= form.label :saison %>
+    <%= form.text_field :saison %>
+  </div>
+
+  <div class="field">
+    <%= form.label :coordonnées %>
+    <%= form.text_field :coordonnees %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

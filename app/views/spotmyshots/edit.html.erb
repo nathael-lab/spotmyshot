@@ -1,0 +1,7 @@
+<h1>Editing Spotmyshot</h1>
+
+<%= render 'form', spotmyshot: @spotmyshot %>
+
+<%= link_to 'Show', @spotmyshot %> |
+<%= link_to 'Back', spotmyshots_path %>
+<%= link_to 'Destroy', @spotmyshot, method: :delete, data: { confirm: 'Are you sure?' } %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titre:</strong>
+  <%= @spotmyshot.titre%>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <div class="image"><%= image_tag @spotmyshot.image %></div>
+</p>
+
+<p>
+  <strong>Parametre:</strong>
+  <%= @spotmyshot.parametre %>
+</p>
+
+<p>
+  <strong>Heure:</strong>
+  <%= @spotmyshot.heure %>
+</p>
+
+<p>
+  <strong>Saison:</strong>
+  <%= @spotmyshot.saison %>
+</p>
+
+<p>
+  <strong>Coordonnees:</strong>
+  <%= @spotmyshot.coordonnees %>
+</p>
+
+<%= link_to 'Edit', edit_spotmyshot_path(@spotmyshot) %> |
+<%= link_to 'Back', spotmyshots_path %>

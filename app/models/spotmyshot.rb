@@ -1,0 +1,2 @@
+class Spotmyshot < ApplicationRecord
+end
